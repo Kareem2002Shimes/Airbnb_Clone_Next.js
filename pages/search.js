@@ -65,7 +65,6 @@ export async function getServerSideProps() {
   const searchResults = await fetch("https://www.jsonkeeper.com/b/5NPS").then(
     (response) => response.json()
   );
-
   return {
     props: {
       searchResults,

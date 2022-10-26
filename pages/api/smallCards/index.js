@@ -1,5 +1,5 @@
 import shortId from "short-id";
-export default function smallCards(req, res) {
+export default function cards(req, res) {
   res.status(200).json([
     {
       id: shortId.generate(),

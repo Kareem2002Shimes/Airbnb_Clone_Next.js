@@ -51,7 +51,7 @@ export default function Home({ exploreData }) {
 }
 
 export async function getStaticProps() {
-  const exploreData = await fetch("http://localhost:5000/api/smallCards")
+  const exploreData = await fetch("/api/smallCards")
     .then((response) => response.json())
     .catch((error) => console.log(error));
   return {
